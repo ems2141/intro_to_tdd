@@ -1,19 +1,18 @@
 require "rspec/core"
 
-require "key_val_store"
+  require "key_val_store"
 
-describe KeyValueStore do
+  describe KeyValueStore do
 
-  it "allows a user of the class can add a value stored under a key." do
-  keyvalue = KeyValueStore.new("Roxy","Dog")
+    it "allows a user of the class can add a value stored under a key." do
+      keyvalue = KeyValueStore.new("Roxy","Dog")
 
-  # expect a user to be able to add a new key with an assigned value
-  expected = {"Roxy" => "Dog"}
+      expected = {"Roxy" => "Dog"}
 
-  actual = keyvalue.hashify
+      actual = keyvalue.add
 
-  expect(actual).to eq expected
+      expect(actual).to eq expected
 
-  end
+    end
 
 end

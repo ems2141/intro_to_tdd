@@ -5,10 +5,16 @@ class KeyValueStore
     @value = value
   end
 
-
-  def hashify
+  def add
     store = {@key => @value}
   end
 
+  #get() method
+
+  #delete() method
+
+  #get_keys method
+
+  #clear method
 
 end
