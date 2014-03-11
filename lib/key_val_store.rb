@@ -1,15 +1,16 @@
 class KeyValueStore
 
-  def initialize(key, value)
-    @key = key
-    @value = value
+  def initialize
+    @store = Hash.new
   end
 
-  def add
-    store = {@key => @value}
+  def add (key, value)
+    @store[key] = value
   end
 
-  #get() method
+  def get(key)
+    @store[key]
+  end
 
   #delete() method
 
