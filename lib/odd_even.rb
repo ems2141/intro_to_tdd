@@ -9,6 +9,9 @@ class OddEven
 
     while i <= @num
         @array<<i
+        if i%2 == 0
+          @array[i-1] = "even"
+        end
         i += 1
     end
   @array
