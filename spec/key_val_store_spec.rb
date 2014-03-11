@@ -58,7 +58,18 @@ require "key_val_store"
       expect(actual_value).to eq expected_value
     end
 
-    it "allows a user to clear a store. Clearing a store deletes all of the keys and their values."
+    it "allows a user to clear a store. Clearing a store deletes all of the keys and their values." do
+      keyvalue = KeyValueStore.new
+      keyvalue.add("Roxy","Dog")
+      keyvalue.add("Chela","Another Dog")
+      keyvalue.add("Harley","Horse")
+
+      expected_value = {}
+
+      actual_value = keyvalue.clear
+
+      expect(actual_value).to eq expected_value
+    end
 
 
   end

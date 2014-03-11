@@ -24,6 +24,8 @@ class KeyValueStore
     @store.keys
   end
 
-  #clear method
+  def clear
+    @store.clear
+  end
 
 end
