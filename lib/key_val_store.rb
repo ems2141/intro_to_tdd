@@ -12,6 +12,10 @@ class KeyValueStore
     @store[key]
   end
 
+  def return
+    @store
+  end
+
   def delete(key)
     @store.delete(key)
   end

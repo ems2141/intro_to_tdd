@@ -31,7 +31,23 @@ require "key_val_store"
 
     end
 
+    it "allows users to add multiple keys to the store" do
+      keyvalue = KeyValueStore.new
+      keyvalue.add("Roxy","Dog")
+      keyvalue.add("Chela","Another Dog")
+      keyvalue.add("Harley","Horse")
+
+      expected_value = {"Roxy" => "Dog","Chela" => "Another Dog","Harley" => "Horse"}
+
+      actual_value = keyvalue.return
+
+      expect(actual_value).to eq expected_value
+    end
+
+
     it "allows a user to get the keys for the store. This will return a list of the keys in the store."
+
+
 
 
   end
