@@ -45,9 +45,20 @@ require "key_val_store"
     end
 
 
-    it "allows a user to get the keys for the store. This will return a list of the keys in the store."
+    it "allows a user to get the keys for the store. This will return a list of the keys in the store." do
+      keyvalue = KeyValueStore.new
+      keyvalue.add("Roxy","Dog")
+      keyvalue.add("Chela","Another Dog")
+      keyvalue.add("Harley","Horse")
 
+      expected_value = ["Roxy", "Chela", "Harley"]
 
+      actual_value = keyvalue.get_keys
+
+      expect(actual_value).to eq expected_value
+    end
+
+    it "allows a user to clear a store. Clearing a store deletes all of the keys and their values."
 
 
   end

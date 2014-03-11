@@ -20,7 +20,9 @@ class KeyValueStore
     @store.delete(key)
   end
 
-  #get_keys method
+  def get_keys
+    @store.keys
+  end
 
   #clear method
 
