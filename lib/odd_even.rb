@@ -11,7 +11,10 @@ class OddEven
         @array<<i
         if i%2 == 0
           @array[i-1] = "even"
+        else
+          @array[i-1] = "odd"
         end
+
         i += 1
     end
   @array
