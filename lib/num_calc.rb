@@ -1,16 +1,22 @@
 class NumCalc
-  def initialize(num1, num2)
-    @num1 = num1
-    @num2 = num2
+  def initialize
+    @memory = 0
   end
 
-  def add
-    @num1+@num2
+  def add (num1, num2)
+    num1+num2
   end
 
-  def subtract
-    @diff=@num1-@num2
+  def subtract(num1, num2)
+    @diff=num1-num2
     @diff.abs
   end
 
+  def save(number)
+    @memory = number
+  end
+
+  def get
+    @memory
+  end
 end
