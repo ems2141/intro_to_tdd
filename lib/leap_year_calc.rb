@@ -1,7 +1,10 @@
 class LeapYearCalc
+  def initialize(year)
+    @year = year
+  end
 
   def yes?
-    false
+    @year % 4 == 0
   end
 
 end
