@@ -30,4 +30,14 @@ describe NumCalc do
 
     expect(actual_value).to eq expected_value
   end
+
+  it "has a method 'clear' that allows the user to clear the calcs memory to 0" do
+    numbers = NumCalc.new
+
+    expected_value = 0
+
+    actual_value = numbers.clear
+
+    expect(actual_value).to eq expected_value
+  end
 end
