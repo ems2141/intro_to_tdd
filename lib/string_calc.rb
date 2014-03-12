@@ -3,9 +3,12 @@ class StringCalc
     @string = string
   end
 
+
   def add
       if @string.length == 0
         @string
+      else
+      @string
       end
   end
 end
