@@ -8,4 +8,9 @@ class NumCalc
     @num1+@num2
   end
 
+  def subtract
+    @diff=@num1-@num2
+    @diff.abs
+  end
+
 end
