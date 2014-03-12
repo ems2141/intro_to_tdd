@@ -2,7 +2,7 @@ require "leap_year_calc"
 
 describe LeapYearCalc do
 
-  it "returns true a leap year if it is divisible by 4. (2001 is not a leap year but 1996 is a leap year)" do
+  it "returns true for a leap year if year is divisible by 4. (2001 is not a leap year but 1996 is a leap year)" do
 
     leap = LeapYearCalc.new(2000)
 
