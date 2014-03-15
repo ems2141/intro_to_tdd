@@ -20,8 +20,3 @@ describe AngryDog do
     expect(expected).to eq actual
   end
 end
-
-
-=begin
-But, if you poke the dog three times, the dog will "bark" instead.
-=end
