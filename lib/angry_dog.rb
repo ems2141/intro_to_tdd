@@ -4,8 +4,10 @@ class AngryDog
   end
 
   def poke
-   if @num_of_pokes == 1
-     "growl"
-   end
+     if @num_of_pokes >= 3
+       "bark"
+     else
+       "growl"
+     end
   end
 end
